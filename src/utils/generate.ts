@@ -1,5 +1,4 @@
-const keylisting: string =
-  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWSWZ1234567890!@#$%&*/?";
+import keylisting from "../keylisting/keylisting";
 let temporary: string = "";
 
 function generatePassword(passwordLength: number) {
