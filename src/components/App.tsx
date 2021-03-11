@@ -1,5 +1,5 @@
 import * as React from "react";
-import generatePassword from "./utils/generate";
+import generatePassword from "../utils/generate";
 
 interface IAppProps {}
 interface IAppState {
