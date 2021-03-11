@@ -7,10 +7,10 @@ body {
   text-align: center;
 }
 
-.grow {
+button {
   transition: all 0.2s ease-in-out;
 }
 
-.grow:hover {
+button:hover {
   transform: scale(1.1);
 }
