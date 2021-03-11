@@ -5,6 +5,7 @@ import generatePassword from "./utils/generate";
 interface IAppProps {}
 interface IAppState {
   chars: string;
+  password: string;
 }
 
 class App extends React.Component<IAppProps, IAppState> {
@@ -12,16 +13,21 @@ class App extends React.Component<IAppProps, IAppState> {
     super(props);
     this.state = {
       chars: "",
+      password: "",
     };
     this.handleChange = this.handleChange.bind(this);
+    this.renderit = this.renderit.bind(this);
   }
 
   handleChange(event: any) {
     this.setState({
       chars: event.target.value,
+      password: generatePassword(Number(event.target.value)),
     });
-    console.log(generatePassword(12));
-    // const pass = document.getElementById("output");
+  }
+
+  renderit() {
+    return <p>{this.state.password}</p>;
   }
 
   render() {
@@ -37,15 +43,8 @@ class App extends React.Component<IAppProps, IAppState> {
             onChange={this.handleChange}
           ></input>
           <br />
-          <input
-            type="text"
-            className="form-control"
-            name="output"
-            id="output"
-            placeholder="Output"
-            value=""
-          ></input>
         </form>
+        <this.renderit />
       </div>
     );
   }
