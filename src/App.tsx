@@ -1,5 +1,4 @@
-import React from "react";
-// import "./index.css";
+import * as React from "react";
 import generatePassword from "./utils/generate";
 
 interface IAppProps {}
@@ -27,7 +26,7 @@ class App extends React.Component<IAppProps, IAppState> {
   }
 
   renderit() {
-    return <p>{this.state.password}</p>;
+    return <p id="output">{this.state.password}</p>;
   }
 
   render() {
