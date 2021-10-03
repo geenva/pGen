@@ -30,10 +30,15 @@ class App extends React.Component<IAppProps, IAppState> {
   }
 
   render() {
-    let pText = "Password Length (Over 12 Is Most Secure)";
+    let pText = "Password Length (Over 12 is the most secure)";
 
     return (
       <div>
+        <p>
+          Made by <a href="https://ymarc.us/">geneva</a> in 2020 while learning
+          React. Enjoy.
+        </p>
+
         <h1>pGen</h1>
         <form>
           <input
