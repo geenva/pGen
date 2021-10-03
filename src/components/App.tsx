@@ -35,8 +35,8 @@ class App extends React.Component<IAppProps, IAppState> {
     return (
       <div>
         <p>
-          Made by <a href="https://ymarc.us/" /> in 2020 while learning React.
-          Enjoy.
+          Made by <a href="https://ymarc.us/">geneva</a> in 2020 while learning
+          React. Enjoy.
         </p>
 
         <h1>pGen</h1>
